@@ -53,7 +53,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
-            padding-top: calc(64px + 2rem); /* Header height + padding */
+            padding-top: calc(64px + 2rem);
         }
 
         /* Header Styles */
@@ -99,6 +99,24 @@
         .logo:hover svg path {
             stroke: var(--neon-purple);
             filter: drop-shadow(0 0 8px var(--neon-purple));
+        }
+
+        /* Language Switch Styles */
+        .language-switch {
+            background: rgba(0, 243, 255, 0.1);
+            border: 1px solid var(--neon-blue);
+            border-radius: 20px;
+            padding: 5px 10px;
+            color: var(--neon-blue);
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .language-switch:hover {
+            background: rgba(157, 0, 255, 0.1);
+            border-color: var(--neon-purple);
+            color: var(--neon-purple);
         }
 
         /* Search Bar Styles */
@@ -288,6 +306,7 @@
                 </svg>
                 <h1>open-JAD</h1>
             </div>
+            <button class="language-switch" id="languageSwitch">EN | 中文</button>
         </div>
     </header>
 
@@ -298,65 +317,34 @@
         <div class="grid" id="websiteGrid"></div>
     </div>
 
-    
-
-<script src="websites.js"></script>
-
-<script>
-        // Sample website data
-        // const websites = [
-        //     {
-        //         title: "Creative Design Hub",
-        //         description: "Explore creative design tools and resources for modern web development.",
-        //         url: "https://example.com/design"
-        //     },
-        //     {
-        //         title: "Code Laboratory",
-        //         description: "Interactive coding challenges and programming tutorials.",
-        //         url: "https://example.com/code"
-        //     },
-        //     {
-        //         title: "Digital Art Gallery",
-        //         description: "Showcase of digital artworks and illustrations from talented artists.",
-        //         url: "https://example.com/art"
-        //     },
-        //     {
-        //         title: "Tech Innovation Hub",
-        //         description: "Latest updates in technology and innovation trends.",
-        //         url: "https://example.com/tech"
-        //     },
-        //     {
-        //         title: "Developer Tools",
-        //         description: "Essential tools and resources for modern web development.",
-        //         url: "https://example.com/tools"
-        //     },
-        //     {
-        //         title: "UI Components",
-        //         description: "Collection of reusable UI components and design patterns.",
-        //         url: "https://example.com/ui"
-        //     },
-        //     {
-        //         title: "Animation Workshop",
-        //         description: "Learn and create stunning web animations.",
-        //         url: "https://example.com/animation"
-        //     },
-        //     {
-        //         title: "Color Palette Generator",
-        //         description: "Create beautiful color schemes for your projects.",
-        //         url: "https://example.com/colors"
-        //     }
-        // ];
-
+    <script src="websites.js"></script>
+    <script>
         // DOM Elements
         const searchInput = document.getElementById('searchInput');
         const websiteGrid = document.getElementById('websiteGrid');
+        const languageSwitch = document.getElementById('languageSwitch');
+
+        // Language state
+        let currentLang = 'en';
+
+        // Translations
+        const translations = {
+            en: {
+                search: "Search for websites...",
+                noResults: "No websites found matching your search."
+            },
+            zh: {
+                search: "搜索网站...",
+                noResults: "没有找到匹配的网站。"
+            }
+        };
 
         // Create and render website cards
         function renderWebsites(websitesToRender) {
             websiteGrid.innerHTML = '';
             
             if (websitesToRender.length === 0) {
-                websiteGrid.innerHTML = '<div class="no-results">No websites found matching your search.</div>';
+                websiteGrid.innerHTML = `<div class="no-results">${translations[currentLang].noResults}</div>`;
                 return;
             }
 
@@ -365,8 +353,9 @@
                 card.className = 'card fade-in';
                 card.style.animationDelay = `${index * 0.1}s`;
                 card.innerHTML = `
-                    <h3>${website.title}</h3>
-                    <p>${website.description}</p>
+                    <h3>${website.title[currentLang]}</h3>
+                    <p>${website.description[currentLang]}</p>
+                    <span class="category">${website.category}</span>
                 `;
                 
                 card.addEventListener('click', () => {
@@ -379,16 +368,23 @@
 
         // Search functionality
         function handleSearch() {
-            const searchTerm = searchInput.value.toLowerCase();
-            const filteredWebsites = websites.filter(website => 
-                website.title.toLowerCase().includes(searchTerm) ||
-                website.description.toLowerCase().includes(searchTerm)
-            );
+            const searchTerm = searchInput.value;
+            const filteredWebsites = searchWebsites(searchTerm, currentLang);
             renderWebsites(filteredWebsites);
+        }
+
+        // Language switch functionality
+        function switchLanguage() {
+            currentLang = currentLang === 'en' ? 'zh' : 'en';
+            languageSwitch.textContent = currentLang === 'en' ? 'EN | 中文' : '中文 | EN';
+            searchInput.placeholder = translations[currentLang].search;
+            renderWebsites(websites);
+            handleSearch();
         }
 
         // Event listeners
         searchInput.addEventListener('input', handleSearch);
+        languageSwitch.addEventListener('click', switchLanguage);
 
         // Initial render
         renderWebsites(websites);
@@ -407,3 +403,4 @@
     </script>
 </body>
 </html>
+
