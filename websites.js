@@ -13,14 +13,14 @@ const websites = [
     },
     {
         title: {
-            en: "Code Laboratory",
-            zh: "代码实验室"
+            en: "vscode[visualstudio]",
+            zh: "vscode[visualstudio]"
         },
         description: {
             en: "Interactive coding challenges and programming tutorials.",
             zh: "互动编码挑战和编程教程。"
         },
-        url: "https://example.com/code",
+        url: "https://code.visualstudio.com/",
         category: "development"
     },
     {
