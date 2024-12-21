@@ -8,7 +8,7 @@ const websites = [
             en: "The official Python download and development help website",
             zh: "python的官方下载及开发帮助网站。"
         },
-        url: "https://python.org",
+        url: "https://www.python.org/",
         category: "organization"
     },
     {
