@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>open-JAD Navigation</title>
+    <style>
+        :root {
+            --neon-blue: #00f3ff;
+            --neon-purple: #9d00ff;
+            --neon-pink: #ff00f7;
+            --dark-bg: #0a0a0a;
+            --card-bg: #151515;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: #fff;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI1MzIuNSIgaGVpZ2h0PSIzOTMuNSI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjYuMjUsMTYuNzUpIj48ZyBkYXRhLXBhcGVyLWRhdGE9IntcImlzUGFpbnRpbmdMYXllclwiOnRydWV9IiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLXdpZHRoPSIwLjUiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0tMjYsMzc2LjV2LTM5M2g1MzJ2MzkzeiIgZGF0YS1wYXBlci1kYXRhPSJ7XCJvcmlnUG9zXCI6bnVsbH0iIGZpbGw9IiMwMDAwMDAiIHN0cm9rZS1saW5lY2FwPSJidXR0Ii8+PHBhdGggZD0iTTkwLjA4MzM1LDEyNy42MDgzM2wxNC41LC0xbDQyLDc3bDUxLC04OC41bC0xMTUuNSwtMC41bC04LC0xNGwxNDguNSwxbC03NiwxMjh6IiBmaWxsPSIjZmZmZmZmIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMzY3LjMzMzM1LDEwMS4xMDgzM2w3NSwxMjUuNWwtMTAzLjUsMWwtNzIsLTEyNS41eiIgZGF0YS1wYXBlci1kYXRhPSJ7XCJvcmlnUG9zXCI6bnVsbH0iIGZpbGw9IiNmZmZmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0zNjIuMzMzMzUsMTE1LjEwODMzbDU3LDk4LjVoLTczLjVsLTU2LjUsLTk5eiIgZGF0YS1wYXBlci1kYXRhPSJ7XCJvcmlnUG9zXCI6bnVsbH0iIGZpbGw9IiMwMDAwMDAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxnIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+PHBhdGggZD0iTTI1My41ODMzNSwxMDEuNjA4MzNsNzAsMTI0LjVsLTEzLDAuNWwtMzEsLTUwbC03NCwxbC0yOC41LDUxLjVoLTE2bDczLjUsLTEyNy41eiIgZGF0YS1wYXBlci1kYXRhPSJ7XCJvcmlnUG9zXCI6bnVsbH0iIGZpbGw9IiNmZmZmZmYiLz48cGF0aCBkPSJNMjcyLjA4MzM1LDE2My42MDgzM2wtNTcsMWwyOSwtNTB6IiBkYXRhLXBhcGVyLWRhdGE9IntcIm9yaWdQb3NcIjpudWxsfSIgZmlsbD0iIzAwMDAwMCIvPjwvZz48L2c+PC9nPjwvc3ZnPg==');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 50%;
+            opacity: 0.05;
+            z-index: -1;
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.05; }
+            50% { opacity: 0.1; }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            padding-top: calc(64px + 2rem); /* Header height + padding */
+        }
+
+        /* Header Styles */
+        header {
+            padding: 1rem;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0, 243, 255, 0.1);
+            height: 64px;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .logo svg {
+            width: 50px;
+            height: auto;
+            filter: drop-shadow(0 0 5px var(--neon-blue));
+        }
+
+        .logo svg path {
+            stroke: var(--neon-blue);
+            stroke-width: 0.5;
+            transition: all 0.3s ease;
+        }
+
+        .logo:hover svg path {
+            stroke: var(--neon-purple);
+            filter: drop-shadow(0 0 8px var(--neon-purple));
+        }
+
+        /* Search Bar Styles */
+        .search-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+
+        .search-bar {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: 2px solid var(--neon-blue);
+            background: rgba(0, 243, 255, 0.05);
+            border-radius: 30px;
+            color: #fff;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .search-bar:focus {
+            outline: none;
+            border-color: var(--neon-purple);
+            box-shadow: 0 0 15px rgba(157, 0, 255, 0.3);
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        /* Card Styles */
+        .card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0, 243, 255, 0.1);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(0, 243, 255, 0.1));
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--neon-blue);
+            box-shadow: 0 5px 15px rgba(0, 243, 255, 0.2);
+        }
+
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        .card h3 {
+            background: linear-gradient(90deg, var(--neon-blue), var(--neon-purple), var(--neon-pink));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+            position: relative;
+            display: inline-block;
+            animation: gradientFlow 3s linear infinite;
+            text-shadow: 0 0 10px rgba(0, 243, 255, 0.3);
+        }
+
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .card h3::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--neon-blue), var(--neon-purple), var(--neon-pink));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .card:hover h3::after {
+            opacity: 1;
+        }
+
+        .card p {
+            color: #888;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        /* Animation Classes */
+        .fade-in {
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+                padding-top: calc(64px + 1rem);
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .search-bar {
+                font-size: 0.9rem;
+            }
+
+            body::before {
+                background-size: 80%;
+            }
+        }
+
+        /* Loading Animation */
+        .loading {
+            width: 50px;
+            height: 50px;
+            border: 3px solid var(--card-bg);
+            border-radius: 50%;
+            border-top-color: var(--neon-blue);
+            animation: spin 1s ease-in-out infinite;
+            margin: 2rem auto;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* No Results Message */
+        .no-results {
+            text-align: center;
+            color: #888;
+            margin-top: 2rem;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="369.12058" height="129.75527" viewBox="0,0,369.12058,129.75527">
+                    <g transform="translate(-73.65089,-100.35541)">
+                        <g fill="none" stroke-linecap="round" stroke-linejoin="miter" stroke-miterlimit="10">
+                            <path d="M90.08335,127.60833l14.5,-1l42,77l51,-88.5l-115.5,-0.5l-8,-14l148.5,1l-76,128z"/>
+                            <path d="M367.33335,101.10833l75,125.5l-103.5,1l-72,-125.5z"/>
+                            <path d="M362.33335,115.10833l57,98.5h-73.5l-56.5,-99z"/>
+                            <path d="M253.58335,101.60833l70,124.5l-13,0.5l-31,-50l-74,1l-28.5,51.5h-16l73.5,-127.5z"/>
+                            <path d="M272.08335,163.60833l-57,1l29,-50z"/>
+                        </g>
+                    </g>
+                </svg>
+                <h1>open-JAD</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search for websites..." id="searchInput">
+        </div>
+        <div class="grid" id="websiteGrid"></div>
+    </div>
+
+    
+
+<script src="websites.js"></script>
+
+<script>
+        // Sample website data
+        // const websites = [
+        //     {
+        //         title: "Creative Design Hub",
+        //         description: "Explore creative design tools and resources for modern web development.",
+        //         url: "https://example.com/design"
+        //     },
+        //     {
+        //         title: "Code Laboratory",
+        //         description: "Interactive coding challenges and programming tutorials.",
+        //         url: "https://example.com/code"
+        //     },
+        //     {
+        //         title: "Digital Art Gallery",
+        //         description: "Showcase of digital artworks and illustrations from talented artists.",
+        //         url: "https://example.com/art"
+        //     },
+        //     {
+        //         title: "Tech Innovation Hub",
+        //         description: "Latest updates in technology and innovation trends.",
+        //         url: "https://example.com/tech"
+        //     },
+        //     {
+        //         title: "Developer Tools",
+        //         description: "Essential tools and resources for modern web development.",
+        //         url: "https://example.com/tools"
+        //     },
+        //     {
+        //         title: "UI Components",
+        //         description: "Collection of reusable UI components and design patterns.",
+        //         url: "https://example.com/ui"
+        //     },
+        //     {
+        //         title: "Animation Workshop",
+        //         description: "Learn and create stunning web animations.",
+        //         url: "https://example.com/animation"
+        //     },
+        //     {
+        //         title: "Color Palette Generator",
+        //         description: "Create beautiful color schemes for your projects.",
+        //         url: "https://example.com/colors"
+        //     }
+        // ];
+
+        // DOM Elements
+        const searchInput = document.getElementById('searchInput');
+        const websiteGrid = document.getElementById('websiteGrid');
+
+        // Create and render website cards
+        function renderWebsites(websitesToRender) {
+            websiteGrid.innerHTML = '';
+            
+            if (websitesToRender.length === 0) {
+                websiteGrid.innerHTML = '<div class="no-results">No websites found matching your search.</div>';
+                return;
+            }
+
+            websitesToRender.forEach((website, index) => {
+                const card = document.createElement('div');
+                card.className = 'card fade-in';
+                card.style.animationDelay = `${index * 0.1}s`;
+                card.innerHTML = `
+                    <h3>${website.title}</h3>
+                    <p>${website.description}</p>
+                `;
+                
+                card.addEventListener('click', () => {
+                    window.location.href = website.url;
+                });
+
+                websiteGrid.appendChild(card);
+            });
+        }
+
+        // Search functionality
+        function handleSearch() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const filteredWebsites = websites.filter(website => 
+                website.title.toLowerCase().includes(searchTerm) ||
+                website.description.toLowerCase().includes(searchTerm)
+            );
+            renderWebsites(filteredWebsites);
+        }
+
+        // Event listeners
+        searchInput.addEventListener('input', handleSearch);
+
+        // Initial render
+        renderWebsites(websites);
+
+        // Add hover effect to logo
+        document.querySelector('.logo').addEventListener('mouseover', function() {
+            this.style.transform = 'scale(1.05)';
+        });
+
+        document.querySelector('.logo').addEventListener('mouseout', function() {
+            this.style.transform = 'scale(1)';
+        });
+
+        // Add smooth scroll behavior
+        document.documentElement.style.scrollBehavior = 'smooth';
+    </script>
+</body>
+</html>
