@@ -1,15 +1,15 @@
 const websites = [
     {
         title: {
-            en: "Creative Design Hub",
-            zh: "创意设计中心"
+            en: "python offical website",
+            zh: "python官方网站"
         },
         description: {
-            en: "Explore creative design tools and resources for modern web development.",
-            zh: "探索现代网页开发的创意设计工具和资源。"
+            en: "The official Python download and development help website",
+            zh: "python的官方下载及开发帮助网站。"
         },
-        url: "https://example.com/design",
-        category: "design"
+        url: "python.org",
+        category: "organization"
     },
     {
         title: {
