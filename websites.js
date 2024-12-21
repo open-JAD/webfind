@@ -1,8 +1,8 @@
 const websites = [
     {
         title: {
-            en: "python offical website",
-            zh: "python官方网站"
+            en: "python",
+            zh: "python"
         },
         description: {
             en: "The official Python download and development help website",
