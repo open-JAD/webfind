@@ -1137,6 +1137,630 @@
     },
     url: "https://kaifa.baidu.com/",
     category: "search"
+},
+{
+    title: {
+        en: "Stack Overflow",
+        zh: "Stack Overflow"
+    },
+    description: {
+        en: "A community for solving bugs and getting programming help.",
+        zh: "一个解决bug的社区，在开发过程中遇到问题时可以在这里搜索答案，与有经验的开发者交流并提升个人影响力。"
+    },
+    url: "https://stackoverflow.com/",
+    category: "community"
+},
+{
+    title: {
+        en: "Programmer Inn",
+        zh: "程序员客栈"
+    },
+    description: {
+        en: "A freelance platform for developers to take on projects and earn extra income.",
+        zh: "一个程序员自由工作平台，有经验的开发者可以注册成为开发者，接项目赚取额外收入，甚至成为自由工作者。"
+    },
+    url: "https://www.proginn.com/",
+    category: "freelance"
+},
+{
+    title: {
+        en: "Juejin",
+        zh: "掘金"
+    },
+    description: {
+        en: "A technical community helping developers grow.",
+        zh: "一个帮助开发者成长的技术社区，可以阅读高质量文章、分享学习心得并与更多开发者交流。"
+    },
+    url: "https://juejin.im",
+    category: "community"
+},
+{
+    title: {
+        en: "V2EX",
+        zh: "V2EX"
+    },
+    description: {
+        en: "A place for sharing and exploring, with many employees from top companies and programmers.",
+        zh: "一个关于分享和探索的地方，上面有很多各大公司的员工和程序员，应有尽有。"
+    },
+    url: "https://www.v2ex.com/",
+    category: "community"
+},
+{
+    title: {
+        en: "CNBlogs",
+        zh: "博客园"
+    },
+    description: {
+        en: "A knowledge-sharing community for developers since 2004.",
+        zh: "一个面向开发者的知识分享社区，创立于2004年，致力于为开发者打造一个纯净的技术交流社区。"
+    },
+    url: "https://www.cnblogs.com/",
+    category: "community"
+},
+{
+    title: {
+        en: "Medium",
+        zh: "Medium"
+    },
+    description: {
+        en: "A platform for high-quality articles, especially in technology.",
+        zh: "一个优质文章网站，上面有很多高质量的技术文章，适合专注于阅读。"
+    },
+    url: "https://medium.com/",
+    category: "blogging"
+},
+{
+    title: {
+        en: "Hacker News",
+        zh: "Hacker News"
+    },
+    description: {
+        en: "A social news website focusing on computer science and entrepreneurship.",
+        zh: "一个专注于计算机科学和创业的社交新闻网站，上面有很多高质量的技术文章。"
+    },
+    url: "https://news.ycombinator.com/news",
+    category: "social"
+},
+{
+    title: {
+        en: "GeeksforGeeks",
+        zh: "GeeksforGeeks"
+    },
+    description: {
+        en: "A computer science portal for geeks.",
+        zh: "一个面向极客的计算机科学门户网站，提供大量技术文章和资源。"
+    },
+    url: "https://www.geeksforgeeks.org/",
+    category: "education"
+},
+{
+    title: {
+        en: "Google",
+        zh: "Google"
+    },
+    description: {
+        en: "The go-to search engine for finding information and solving problems.",
+        zh: "最常用的搜索引擎，用于查找资料和解决问题。"
+    },
+    url: "https://google.com/",
+    category: "search"
+},
+{
+    title: {
+        en: "LintCode",
+        zh: "LintCode"
+    },
+    description: {
+        en: "A platform for practicing algorithms and coding challenges.",
+        zh: "一个算法学习网站，每天刷两道算法题，提升编程能力。"
+    },
+    url: "https://www.lintcode.com/",
+    category: "challenge"
+},
+{
+    title: {
+        en: "LeetCode",
+        zh: "LeetCode"
+    },
+    description: {
+        en: "A platform for preparing technical interviews with coding challenges.",
+        zh: "一个用于准备技术面试的平台，包含大量的算法题目。"
+    },
+    url: "https://leetcode.com/",
+    category: "challenge"
+},
+{
+    title: {
+        en: "LeetCode (Chinese)",
+        zh: "LeetCode 中文站"
+    },
+    description: {
+        en: "The Chinese version of LeetCode for algorithm practice.",
+        zh: "LeetCode的中文站点，适合英文不好的开发者进行算法练习。"
+    },
+    url: "https://leetcode-cn.com/",
+    category: "challenge"
+},
+{
+    title: {
+        en: "NowCoder",
+        zh: "牛客网"
+    },
+    description: {
+        en: "A platform for sharing interview experiences and practicing coding challenges.",
+        zh: "一个分享面试经验和刷面试题的平台，找工作前认真刷一刷会有很大收获。"
+    },
+    url: "https://www.nowcoder.com",
+    category: "education"
+},
+{
+    title: {
+        en: "freeCodeCamp",
+        zh: "freeCodeCamp"
+    },
+    description: {
+        en: "A web development learning platform with interactive exercises.",
+        zh: "一个Web开发学习平台，从简单到深入逐步学习Web开发，并获得相应的资格认证。"
+    },
+    url: "https://www.freecodecamp.org/",
+    category: "education"
+},
+{
+    title: {
+        en: "Baidu Frontend Technology Academy",
+        zh: "百度前端技术学院"
+    },
+    description: {
+        en: "A frontend development project library by Baidu.",
+        zh: "百度官方推出的前端开发学习技术学院，题目从简单到困难，适合学习前端开发。"
+    },
+    url: "http://ife.baidu.com",
+    category: "education"
+},
+{
+    title: {
+        en: "Runoob",
+        zh: "菜鸟教程"
+    },
+    description: {
+        en: "A beginner-friendly tutorial site covering various programming languages.",
+        zh: "一个面向初学者的编程教程网站，涵盖HTML、CSS、JavaScript、PHP、C、Python等基础编程教程。"
+    },
+    url: "http://www.runoob.com/",
+    category: "tutorial"
+},
+{
+    title: {
+        en: "China MOOC",
+        zh: "中国大学MOOC"
+    },
+    description: {
+        en: "An online education platform offering MOOC courses from top universities.",
+        zh: "由网易与高教社携手推出的在线教育平台，提供中国知名高校的MOOC课程。"
+    },
+    url: "https://www.icourse163.org/",
+    category: "education"
+},
+{
+    title: {
+        en: "freeCodeCamp Medium Blog",
+        zh: "freeCodeCamp Medium 博客"
+    },
+    description: {
+        en: "A blog by freeCodeCamp covering various topics in web development.",
+        zh: "freeCodeCamp的Medium博客，涵盖各种前端开发话题。"
+    },
+    url: "https://medium.freecodecamp.com/",
+    category: "blogging"
+},
+{
+    title: {
+        en: "CSS-Tricks",
+        zh: "CSS-Tricks"
+    },
+    description: {
+        en: "A blog about CSS and web design, with tips and tutorials.",
+        zh: "一个关于CSS和网页设计的博客，提供技巧和教程。"
+    },
+    url: "https://css-tricks.com/",
+    category: "blogging"
+},
+{
+    title: {
+        en: "CSS Weekly",
+        zh: "CSS Weekly"
+    },
+    description: {
+        en: "A weekly email newsletter with the latest CSS news, articles, and resources.",
+        zh: "每周电子邮件通讯，包含最新的CSS新闻、文章和资源。"
+    },
+    url: "http://css-weekly.com/",
+    category: "newsletter"
+},
+{
+    title: {
+        en: "HTML5 Rocks",
+        zh: "HTML5 Rocks"
+    },
+    description: {
+        en: "A resource for web developers interested in HTML5 and related technologies.",
+        zh: "一个面向前端开发者的资源网站，涵盖HTML5及相关技术。"
+    },
+    url: "https://www.html5rocks.com/en/",
+    category: "resource"
+},
+{
+    title: {
+        en: "Mobile Web Weekly",
+        zh: "Mobile Web Weekly"
+    },
+    description: {
+        en: "A weekly newsletter covering mobile web development.",
+        zh: "每周通讯，涵盖移动Web开发。"
+    },
+    url: "https://mobilewebweekly.com/",
+    category: "newsletter"
+},
+{
+    title: {
+        en: "Echo JS",
+        zh: "Echo JS"
+    },
+    description: {
+        en: "A JavaScript news and articles website.",
+        zh: "一个JavaScript新闻和文章网站。"
+    },
+    url: "http://www.echojs.com/",
+    category: "news"
+},
+{
+    title: {
+        en: "Smashing Magazine",
+        zh: "Smashing Magazine"
+    },
+    description: {
+        en: "A resource for web developers and designers, with articles on web design, development, and business.",
+        zh: "一个面向前端开发者和设计师的资源网站，涵盖Web设计、开发和商业的文章。"
+    },
+    url: "https://www.smashingmagazine.com/",
+    category: "resource"
+},
+{
+    title: {
+        en: "SitePoint",
+        zh: "SitePoint"
+    },
+    description: {
+        en: "A resource for web developers and designers, with tutorials, articles, and books.",
+        zh: "一个面向前端开发者和设计师的资源网站，提供教程、文章和书籍。"
+    },
+    url: "https://www.sitepoint.com/",
+    category: "resource"
+},
+{
+    title: {
+        en: "JavaScript Weekly",
+        zh: "JavaScript Weekly"
+    },
+    description: {
+        en: "A weekly newsletter with the latest JavaScript news, articles, and resources.",
+        zh: "每周通讯，包含最新的JavaScript新闻、文章和资源。"
+    },
+    url: "http://javascriptweekly.com/",
+    category: "newsletter"
+},
+{
+    title: {
+        en: "Frontend Focus",
+        zh: "Frontend Focus"
+    },
+    description: {
+        en: "A weekly newsletter with the latest frontend news, articles, and resources.",
+        zh: "每周通讯，包含最新的前端新闻、文章和资源。"
+    },
+    url: "http://frontendfocus.co/",
+    category: "newsletter"
+},
+{
+    title: {
+        en: "React JS Newsletter",
+        zh: "React JS 通讯"
+    },
+    description: {
+        en: "A weekly newsletter with the latest React news, articles, and resources.",
+        zh: "每周通讯，包含最新的React新闻、文章和资源。"
+    },
+    url: "http://reactjsnewsletter.com/issues",
+    category: "newsletter"
+},
+{
+    title: {
+        en: "Hashnode",
+        zh: "Hashnode"
+    },
+    description: {
+        en: "A blogging platform for developers to share their knowledge.",
+        zh: "一个开发者博客平台，分享知识。"
+    },
+    url: "https://hashnode.com/",
+    category: "blogging"
+},
+{
+    title: {
+        en: "Ruby Weekly",
+        zh: "Ruby Weekly"
+    },
+    description: {
+        en: "A weekly newsletter with the latest Ruby news, articles, and resources.",
+        zh: "每周通讯，包含最新的Ruby新闻、文章和资源。"
+    },
+    url: "http://rubyweekly.com/",
+    category: "newsletter"
+},
+{
+    title: {
+        en: "Go Weekly",
+        zh: "Go Weekly"
+    },
+    description: {
+        en: "A weekly newsletter with the latest Go news, articles, and resources.",
+        zh: "每周通讯，包含最新的Go新闻、文章和资源。"
+    },
+    url: "https://golangweekly.com/",
+    category: "newsletter"
+},
+{
+    title: {
+        en: "DB Weekly",
+        zh: "DB Weekly"
+    },
+    description: {
+        en: "A weekly newsletter with the latest database news, articles, and resources.",
+        zh: "每周通讯，包含最新的数据库新闻、文章和资源。"
+    },
+    url: "https://dbweekly.com/",
+    category: "newsletter"
+},
+{
+    title: {
+        en: "RisingStack",
+        zh: "RisingStack"
+    },
+    description: {
+        en: "A resource for Node.js developers with articles, tutorials, and guides.",
+        zh: "一个面向Node.js开发者的资源网站，提供文章、教程和指南。"
+    },
+    url: "https://risingstack.com/",
+    category: "resource"
+},
+{
+    title: {
+        en: "Node Weekly",
+        zh: "Node Weekly"
+    },
+    description: {
+        en: "A weekly newsletter with the latest Node.js news, articles, and resources.",
+        zh: "每周通讯，包含最新的Node.js新闻、文章和资源。"
+    },
+    url: "http://nodeweekly.com/",
+    category: "newsletter"
+},
+{
+    title: {
+        en: "WebOps Weekly",
+        zh: "WebOps Weekly"
+    },
+    description: {
+        en: "A weekly newsletter with the latest web operations news, articles, and resources.",
+        zh: "每周通讯，包含最新的Web运维新闻、文章和资源。"
+    },
+    url: "https://webopsweekly.com/",
+    category: "newsletter"
+},
+{
+    title: {
+        en: "Postgres Weekly",
+        zh: "Postgres Weekly"
+    },
+    description: {
+        en: "A weekly newsletter with the latest PostgreSQL news, articles, and resources.",
+        zh: "每周通讯，包含最新的PostgreSQL新闻、文章和资源。"
+    },
+    url: "https://postgresweekly.com/",
+    category: "newsletter"
+},
+{
+    title: {
+        en: "Android Weekly",
+        zh: "Android Weekly"
+    },
+    description: {
+        en: "A weekly newsletter with the latest Android news, articles, and resources.",
+        zh: "每周通讯，包含最新的Android新闻、文章和资源。"
+    },
+    url: "http://androidweekly.net/",
+    category: "newsletter"
+},
+{
+    title: {
+        en: "iOS Dev Tools",
+        zh: "iOS Dev Tools"
+    },
+    description: {
+        en: "A collection of tools for iOS developers.",
+        zh: "iOS开发者的工具集合。"
+    },
+    url: "https://iosdev.tools/",
+    category: "resource"
+},
+{
+    title: {
+        en: "iOS Dev Weekly",
+        zh: "iOS Dev Weekly"
+    },
+    description: {
+        en: "A weekly newsletter with the latest iOS development news, articles, and resources.",
+        zh: "每周通讯，包含最新的iOS开发新闻、文章和资源。"
+    },
+    url: "https://iosdevweekly.com/",
+    category: "newsletter"
+},
+{
+    title: {
+        en: "Little Bites of Cocoa",
+        zh: "Little Bites of Cocoa"
+    },
+    description: {
+        en: "A weekly newsletter with small tips and tricks for iOS developers.",
+        zh: "每周通讯，包含iOS开发的小技巧和提示。"
+    },
+    url: "https://littlebitesofcocoa.com/",
+    category: "newsletter"
+},
+{
+    title: {
+        en: "iOS Goodies",
+        zh: "iOS Goodies"
+    },
+    description: {
+        en: "A weekly newsletter with the latest iOS news, articles, and resources.",
+        zh: "每周通讯，包含最新的iOS新闻、文章和资源。"
+    },
+    url: "http://ios-goodies.com/",
+    category: "newsletter"
+},
+{
+    title: {
+        en: "Swift Weekly Digest",
+        zh: "Swift Weekly Digest"
+    },
+    description: {
+        en: "A weekly newsletter with the latest Swift news, articles, and resources.",
+        zh: "每周通讯，包含最新的Swift新闻、文章和资源。"
+    },
+    url: "http://digest.swiftweekly.com/",
+    category: "newsletter"
+},
+{
+    title: {
+        en: "TutorialsPoint",
+        zh: "TutorialsPoint"
+    },
+    description: {
+        en: "A comprehensive online learning website covering various programming languages and technologies.",
+        zh: "一个全面的在线学习网站，涵盖各种编程语言和技术。"
+    },
+    url: "https://www.tutorialspoint.com/",
+    category: "learning"
+},
+{
+    title: {
+        en: "Codeforces",
+        zh: "Codeforces"
+    },
+    description: {
+        en: "A competitive programming platform for algorithm learning and competition.",
+        zh: "一个用于算法学习和竞赛的编程竞赛平台。"
+    },
+    url: "http://codeforces.com/",
+    category: "challenge"
+},
+{
+    title: {
+        en: "SegmentFault",
+        zh: "SegmentFault"
+    },
+    description: {
+        en: "A Q&A website for developers.",
+        zh: "一个面向开发者的问答网站。"
+    },
+    url: "https://segmentfault.com/",
+    category: "Q&A"
+},
+{
+    title: {
+        en: "Linux Kernel",
+        zh: "Linux 内核"
+    },
+    description: {
+        en: "The official website of the Linux Kernel.",
+        zh: "Linux内核的官方网站。"
+    },
+    url: "https://www.kernel.org/",
+    category: "resource"
+},
+{
+    title: {
+        en: "freeCodeCamp Chinese",
+        zh: "freeCodeCamp 中文网"
+    },
+    description: {
+        en: "The Chinese version of freeCodeCamp.",
+        zh: "freeCodeCamp的中文网站。"
+    },
+    url: "https://www.freecodecamp.one/",
+    category: "learning"
+},
+{
+    title: {
+        en: "Bilibili",
+        zh: "Bilibili"
+    },
+    description: {
+        en: "A popular video-sharing platform with a large community of developers and tech enthusiasts.",
+        zh: "一个流行的视频分享平台，拥有大量开发者和技术爱好者的社区。"
+    },
+    url: "https://www.bilibili.com/",
+    category: "video"
+},
+{
+    title: {
+        en: "Alibaba Open Source Mirror",
+        zh: "阿里巴巴开源镜像"
+    },
+    description: {
+        en: "An open source mirror provided by Alibaba.",
+        zh: "阿里巴巴提供的开源镜像。"
+    },
+    url: "https://opsx.alibaba.com/mirror",
+    category: "resource"
+},
+{
+    title: {
+        en: "USTC Open Source Mirror",
+        zh: "中国科学技术大学开源镜像"
+    },
+    description: {
+        en: "An open source mirror provided by University of Science and Technology of China.",
+        zh: "中国科学技术大学提供的开源镜像。"
+    },
+    url: "http://mirrors.ustc.edu.cn/",
+    category: "resource"
+},
+{
+    title: {
+        en: "HackerRank",
+        zh: "HackerRank"
+    },
+    description: {
+        en: "A platform for practicing algorithms and coding challenges.",
+        zh: "一个用于算法练习和编程挑战的平台。"
+    },
+    url: "https://www.hackerrank.com/",
+    category: "challenge"
+},
+{
+    title: {
+        en: "CSDN",
+        zh: "CSDN"
+    },
+    description: {
+        en: "A popular Chinese developer community with tutorials, articles, and forums.",
+        zh: "一个流行的中国开发者社区，提供教程、文章和论坛。"
+    },
+    url: "https://www.csdn.net/",
+    category: "community"
 }
 
 
