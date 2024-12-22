@@ -1,7 +1,18 @@
 
     const websites = [
    
-   
+        {
+            title: {
+                en: "Open-JAD",
+                zh: "Open-JAD"
+            },
+            description: {
+                en: "open-JAD website  <(￣︶￣)>",
+                zh: "open-JAD的官方网站(这个网站就是我们开发的哦   <(￣︶￣)>   )"
+            },
+            url: "https://open-jad.github.io/",
+            category: "development"
+        },
     {
         title: {
             en: "LinkedIn",
@@ -1114,18 +1125,7 @@
     url: "https://v0.gg/",
     category: "entertainment"
 },
-{
-    title: {
-        en: "Open-JAD",
-        zh: "Open-JAD"
-    },
-    description: {
-        en: "open-JAD website  <(￣︶￣)>",
-        zh: "open-JAD的官方网站(这个网站就是我们开发的哦   <(￣︶￣)>   )"
-    },
-    url: "https://open-jad.github.io/",
-    category: "development"
-},
+
 {
     title: {
         en: "Developer Search",
