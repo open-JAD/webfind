@@ -2287,6 +2287,354 @@
     },
     url: "https://coding.net/",
     category: "platform"
+},
+{
+    title: {
+        en: "Spring",
+        zh: "Spring"
+    },
+    description: {
+        en: "A comprehensive framework for building Java applications",
+        zh: "一个用于构建Java应用程序的综合框架"
+    },
+    url: "https://spring.io/",
+    category: "framework"
+},
+{
+    title: {
+        en: "Oracle",
+        zh: "Oracle"
+    },
+    description: {
+        en: "Java programming language and database management system",
+        zh: "Java编程语言和数据库管理系统"
+    },
+    url: "https://www.oracle.com/java/",
+    category: "programming"
+},
+{
+    title: {
+        en: "C++",
+        zh: "C++"
+    },
+    description: {
+        en: "A general-purpose programming language",
+        zh: "一种通用编程语言"
+    },
+    url: "https://isocpp.org/",
+    category: "programming"
+},
+{
+    title: {
+        en: "JavaScript",
+        zh: "JavaScript"
+    },
+    description: {
+        en: "A programming language that is one of the core technologies of the World Wide Web",
+        zh: "一种编程语言，是Web技术的核心之一"
+    },
+    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    category: "programming"
+},
+{
+    title: {
+        en: "Android Developer",
+        zh: "Android开发者"
+    },
+    description: {
+        en: "Official documentation and resources for Android app development",
+        zh: "Android应用开发的官方文档和资源"
+    },
+    url: "https://developer.android.com/",
+    category: "documentation"
+},
+{
+    title: {
+        en: "iOS Developer",
+        zh: "iOS开发者"
+    },
+    description: {
+        en: "Official documentation and resources for iOS app development",
+        zh: "iOS应用开发的官方文档和资源"
+    },
+    url: "https://developer.apple.com/",
+    category: "documentation"
+},
+{
+    title: {
+        en: "Flutter",
+        zh: "Flutter"
+    },
+    description: {
+        en: "An open-source UI software development kit created by Google",
+        zh: "由Google开发的开源UI软件开发工具包"
+    },
+    url: "https://flutter.dev/",
+    category: "framework"
+},
+{
+    title: {
+        en: "React Native",
+        zh: "React Native"
+    },
+    description: {
+        en: "A framework for building native apps using React",
+        zh: "使用React构建原生应用的框架"
+    },
+    url: "https://reactnative.dev/",
+    category: "framework"
+},
+{
+    title: {
+        en: "Appium",
+        zh: "Appium"
+    },
+    description: {
+        en: "An open-source test automation framework for mobile applications",
+        zh: "一个用于移动应用测试自动化的开源框架"
+    },
+    url: "https://appium.io/",
+    category: "testing"
+},
+{
+    title: {
+        en: "Charles",
+        zh: "Charles"
+    },
+    description: {
+        en: "An HTTP proxy/monitor/reverse proxy that enables a developer to view all of the HTTP and SSL/HTTPS traffic between their machine and the Internet",
+        zh: "一个HTTP代理/监视器/反向代理，使开发者能够查看其机器与互联网之间的所有HTTP和SSL/HTTPS流量"
+    },
+    url: "https://www.charlesproxy.com/",
+    category: "debugging"
+},
+{
+    title: {
+        en: "Fiddler",
+        zh: "Fiddler"
+    },
+    description: {
+        en: "A web debugging proxy that logs all HTTP(S) traffic between your computer and the internet",
+        zh: "一个Web调试代理，记录你计算机与互联网之间的所有HTTP(S)流量"
+    },
+    url: "https://www.telerik.com/fiddler",
+    category: "debugging"
+},
+{
+    title: {
+        en: "Xcode",
+        zh: "Xcode"
+    },
+    description: {
+        en: "An integrated development environment for macOS containing a suite of software development tools",
+        zh: "一个包含软件开发工具套件的macOS集成开发环境"
+    },
+    url: "https://developer.apple.com/xcode/",
+    category: "development"
+},
+{
+    title: {
+        en: "UML Diagrams",
+        zh: "UML图"
+    },
+    description: {
+        en: "A collection of tools for creating UML diagrams",
+        zh: "用于创建UML图的工具集合"
+    },
+    url: "https://www.umldiagrams.org/",
+    category: "design"
+},
+{
+    title: {
+        en: "Architecture Patterns",
+        zh: "架构模式"
+    },
+    description: {
+        en: "A collection of software architecture patterns",
+        zh: "软件架构模式集合"
+    },
+    url: "https://www.architecturepatterns.io/",
+    category: "design"
+},
+{
+    title: {
+        en: "Martin Fowler",
+        zh: "Martin Fowler"
+    },
+    description: {
+        en: "A blog by Martin Fowler, covering software design, architecture, and development methodologies",
+        zh: "Martin Fowler的博客，涵盖软件设计、架构和开发方法论"
+    },
+    url: "https://martinfowler.com/",
+    category: "blog"
+},
+{
+    title: {
+        en: "InfoQ Architecture",
+        zh: "InfoQ架构"
+    },
+    description: {
+        en: "A section of InfoQ covering software architecture",
+        zh: "InfoQ的架构板块"
+    },
+    url: "https://www.infoq.com/architecture/",
+    category: "blog"
+},
+{
+    title: {
+        en: "Jenkins",
+        zh: "Jenkins"
+    },
+    description: {
+        en: "An open-source automation server",
+        zh: "一个开源自动化服务器"
+    },
+    url: "https://www.jenkins.io/",
+    category: "automation"
+},
+{
+    title: {
+        en: "Ansible",
+        zh: "Ansible"
+    },
+    description: {
+        en: "An open-source automation tool",
+        zh: "一个开源自动化工具"
+    },
+    url: "https://www.ansible.com/",
+    category: "automation"
+},
+{
+    title: {
+        en: "Tableau",
+        zh: "Tableau"
+    },
+    description: {
+        en: "A business intelligence and data visualization tool",
+        zh: "一个商业智能和数据可视化工具"
+    },
+    url: "https://www.tableau.com/",
+    category: "visualization"
+},
+{
+    title: {
+        en: "PowerBI",
+        zh: "PowerBI"
+    },
+    description: {
+        en: "A business analytics service by Microsoft",
+        zh: "由微软提供的商业分析服务"
+    },
+    url: "https://powerbi.microsoft.com/",
+    category: "visualization"
+},
+{
+    title: {
+        en: "D3.js",
+        zh: "D3.js"
+    },
+    description: {
+        en: "A JavaScript library for producing dynamic, interactive data visualizations in web browsers",
+        zh: "一个用于在Web浏览器中生成动态交互式数据可视化的JavaScript库"
+    },
+    url: "https://d3js.org/",
+    category: "library"
+},
+{
+    title: {
+        en: "阮一峰的网络日志",
+        zh: "阮一峰的网络日志"
+    },
+    description: {
+        en: "A blog covering web development technologies and trends",
+        zh: "一个涵盖Web开发技术和趋势的博客"
+    },
+    url: "http://www.ruanyifeng.com/blog/",
+    category: "blog"
+},
+{
+    title: {
+        en: "张鑫旭的博客",
+        zh: "张鑫旭的博客"
+    },
+    description: {
+        en: "A blog focusing on front-end technology",
+        zh: "一个专注于前端技术的博客"
+    },
+    url: "https://www.zhangxinxu.com/",
+    category: "blog"
+},
+{
+    title: {
+        en: "InfoQ中文站",
+        zh: "InfoQ中文站"
+    },
+    description: {
+        en: "A section of InfoQ covering software development and technology trends in Chinese",
+        zh: "InfoQ的中文板块，涵盖软件开发和技术趋势"
+    },
+    url: "https://www.infoq.cn/",
+    category: "blog"
+},
+{
+    title: {
+        en: "开源中国博客",
+        zh: "开源中国博客"
+    },
+    description: {
+        en: "A blog section on Open Source China where developers share technical experiences and insights",
+        zh: "开源中国的博客板块，开发者在这里分享技术经验和见解"
+    },
+    url: "https://my.oschina.net/blog",
+    category: "blog"
+},
+{
+    title: {
+        en: "IP地址查询",
+        zh: "IP地址查询"
+    },
+    description: {
+        en: "A tool for querying IP address information",
+        zh: "一个用于查询IP地址信息的工具"
+    },
+    url: "https://ip.tool.chinaz.com/",
+    category: "tool"
+},
+{
+    title: {
+        en: "在线JSON格式化",
+        zh: "在线JSON格式化"
+    },
+    description: {
+        en: "A tool for formatting JSON data",
+        zh: "一个用于格式化JSON数据的工具"
+    },
+    url: "https://www.json.cn/",
+    category: "tool"
+},
+{
+    title: {
+        en: "Base64编码解码",
+        zh: "Base64编码解码"
+    },
+    description: {
+        en: "A tool for Base64 encoding and decoding",
+        zh: "一个用于Base64编码和解码的工具"
+    },
+    url: "https://www.base64encode.org/",
+    category: "tool"
+},
+{
+    title: {
+        en: "正则表达式测试",
+        zh: "正则表达式测试"
+    },
+    description: {
+        en: "A tool for testing regular expressions",
+        zh: "一个用于测试正则表达式的工具"
+    },
+    url: "https://regex101.com/",
+    category: "tool"
 }
     
 
