@@ -1761,9 +1761,534 @@
     },
     url: "https://www.csdn.net/",
     category: "community"
+},
+
+
+    {
+        title: {
+            en: "GitHub",
+            zh: "GitHub"
+        },
+        description: {
+            en: "The largest open-source code hosting platform globally, supporting Git version control and features like code hosting, version control, code review, etc.",
+            zh: "全球最大开源代码托管平台，支持 Git 版本控制，可进行代码托管、版本控制、代码审查等。"
+        },
+        url: "https://www.github.com/",
+        category: "platform"
+    },
+    {
+        title: {
+            en: "GitLab",
+            zh: "GitLab"
+        },
+        description: {
+            en: "Similar to GitHub with additional support for CI/CD pipelines, suitable for enterprise internal use.",
+            zh: "功能与 GitHub 类似，且支持 CI/CD 管道，适合企业内部使用。"
+        },
+        url: "https://about.gitlab.com/",
+        category: "platform"
+    },
+    {
+        title: {
+            en: "Gitee (码云)",
+            zh: "码云（Gitee）"
+        },
+        description: {
+            en: "China's leading code hosting platform offering Git version control, code review, and continuous integration features.",
+            zh: "中国领先的代码托管平台，提供 Git 版本控制、代码审查和持续集成等功能。"
+        },
+        url: "https://gitee.com/",
+        category: "platform"
+    },
+    {
+        title: {
+            en: "Coding",
+            zh: "Coding"
+        },
+        description: {
+            en: "Provides code hosting, project management, code review, and continuous integration services, supporting team collaboration and agile development.",
+            zh: "提供代码托管、项目管理、代码审查和持续集成等服务，支持团队协作和敏捷开发。"
+        },
+        url: "https://coding.net/",
+        category: "platform"
+    },
+
+    // 技术问答与交流社区
+    {
+        title: {
+            en: "Stack Overflow",
+            zh: "Stack Overflow"
+        },
+        description: {
+            en: "The world's largest community for programmers to ask and answer programming questions.",
+            zh: "全球最大的程序员问答社区，可寻求和解答各种编程问题。"
+        },
+        url: "https://stackoverflow.com/",
+        category: "community"
+    },
+    {
+        title: {
+            en: "CSDN",
+            zh: "CSDN"
+        },
+        description: {
+            en: "China's largest IT technology community providing technical blogs, forums, Q&A, and resource downloads.",
+            zh: "国内最大的 IT 技术社区，提供技术博客、论坛、问答和资源下载等服务。"
+        },
+        url: "https://www.csdn.net/",
+        category: "community"
+    },
+    {
+        title: {
+            en: "V2EX",
+            zh: "V2EX"
+        },
+        description: {
+            en: "A technical exchange community with a large number of programmers, designers, and entrepreneurs participating in discussions.",
+            zh: "技术交流社区，有大量程序员、设计师和创业者参与讨论。"
+        },
+        url: "https://www.v2ex.com/",
+        category: "community"
+    },
+    {
+        title: {
+            en: "SegmentFault",
+            zh: "SegmentFault"
+        },
+        description: {
+            en: "A technical Q&A community and blog platform mainly for programmers covering various technical issues and solutions.",
+            zh: "以程序员为主的技术问答社区和博客平台，涵盖编程语言、框架、数据库等多个领域的技术问题和解决方案。"
+        },
+        url: "https://segmentfault.com/",
+        category: "community"
+    },
+
+    // 学习与教程网站
+    {
+        title: {
+            en: "Runoob (菜鸟教程)",
+            zh: "菜鸟教程"
+        },
+        description: {
+            en: "Provides beginner tutorials and sample code for various programming languages and technologies.",
+            zh: "提供各种编程语言和技术的入门教程和示例代码，适合初学者快速上手。"
+        },
+        url: "https://www.runoob.com/",
+        category: "tutorial"
+    },
+    {
+        title: {
+            en: "imooc (慕课网)",
+            zh: "慕课网"
+        },
+        description: {
+            en: "Offers a wide range of programming courses and video tutorials covering front-end, back-end, mobile development, etc.",
+            zh: "提供丰富的编程课程和视频教程，涵盖前端、后端、移动开发等多个领域。"
+        },
+        url: "https://www.imooc.com/",
+        category: "education"
+    },
+    {
+        title: {
+            en: "Coursera",
+            zh: "Coursera"
+        },
+        description: {
+            en: "Offers computer science and programming courses from universities and institutions worldwide.",
+            zh: "提供来自全球大学和机构的计算机科学和编程课程，如机器学习、数据科学等。"
+        },
+        url: "https://www.coursera.org/",
+        category: "education"
+    },
+    {
+        title: {
+            en: "edX",
+            zh: "edX"
+        },
+        description: {
+            en: "Founded by MIT and Harvard University, it offers high-quality online courses covering computer science and engineering fields.",
+            zh: "由麻省理工学院和哈佛大学联合创办，提供高质量的在线课程，覆盖计算机科学和工程等领域。"
+        },
+        url: "https://www.edx.org/",
+        category: "education"
+    },
+
+    // 在线代码编辑器与 IDE
+    {
+        title: {
+            en: "CoderPad",
+            zh: "CoderPad"
+        },
+        description: {
+            en: "An online code interview platform that supports real-time writing and running of multiple programming languages.",
+            zh: "在线代码面试平台，支持多种编程语言的实时编写和运行，方便面试和在线协作编程。"
+        },
+        url: "https://coderpad.io/",
+        category: "tool"
+    },
+    {
+        title: {
+            en: "JSFiddle",
+            zh: "JSFiddle"
+        },
+        description: {
+            en: "An online editor for JavaScript, HTML, and CSS with real-time preview and code sharing.",
+            zh: "在线 JavaScript、HTML 和 CSS 编辑器，支持实时预览和代码分享。"
+        },
+        url: "https://jsfiddle.net/",
+        category: "tool"
+    },
+    {
+        title: {
+            en: "CodePen",
+            zh: "CodePen"
+        },
+        description: {
+            en: "An online editor and sharing platform for front-end code, allowing quick creation and display of HTML, CSS, and JavaScript code snippets.",
+            zh: "一个前端代码在线编辑和分享平台，可快速创建和展示 HTML、CSS 和 JavaScript 代码片段。"
+        },
+        url: "https://codepen.io/",
+        category: "tool"
+    },
+    {
+        title: {
+            en: "repl.it",
+            zh: "repl.it"
+        },
+        description: {
+            en: "An online code editor supporting multiple programming languages for quick code execution and debugging.",
+            zh: "支持多种编程语言的在线代码编辑器，可快速运行和调试代码。"
+        },
+        url: "https://replit.com/",
+        category: "tool"
+    },
+
+    // 在线调试与测试工具
+    {
+        title: {
+            en: "Postman",
+            zh: "Postman"
+        },
+        description: {
+            en: "A powerful API debugging and testing tool supporting API request building, sending, and automated testing.",
+            zh: "强大的 API 调试和测试工具，支持 API 请求的构建、发送和自动化测试。"
+        },
+        url: "https://www.postman.com/",
+        category: "tool"
+    },
+    {
+        title: {
+            en: "Apifox",
+            zh: "Apifox"
+        },
+        description: {
+            en: "A tool integrating API documentation, debugging, Mock, and testing, suitable for API development and testing.",
+            zh: "集 API 文档、调试、Mock、测试于一体的工具，适合 API 开发和测试。"
+        },
+        url: "https://www.apifox.cn/",
+        category: "tool"
+    },
+    {
+        title: {
+            en: "Selenium",
+            zh: "Selenium"
+        },
+        description: {
+            en: "A framework for automating web application testing, supporting multiple browsers and programming languages.",
+            zh: "主要用于 Web 应用程序的自动化测试框架，支持多种浏览器和编程语言。"
+        },
+        url: "https://www.selenium.dev/",
+        category: "tool"
+    },
+    {
+        title: {
+            en: "JMeter",
+            zh: "JMeter"
+        },
+        description: {
+            en: "A performance testing tool for web applications, databases, etc., used for stress testing.",
+            zh: "用于性能测试的工具，可对 Web 应用程序、数据库等进行压力测试。"
+        },
+        url: "https://jmeter.apache.org/",
+        category: "tool"
+    },
+
+    // 设计资源与工具
+    {
+        title: {
+            en: "Dribbble",
+            zh: "Dribbble"
+        },
+        description: {
+            en: "A global hub for top designers showcasing high-quality design works and creative inspiration.",
+            zh: "全球顶尖设计师的聚集地，汇聚大量高质量设计作品和创意灵感。"
+        },
+        url: "https://dribbble.com/",
+        category: "design"
+    },
+    {
+        title: {
+            en: "Canva",
+            zh: "Canva"
+        },
+        description: {
+            en: "An online design tool offering rich templates and resources to help users create professional-level designs quickly.",
+            zh: "在线设计工具，提供丰富设计模板和素材资源，帮助用户快速制作专业水准设计作品。"
+        },
+        url: "https://www.canva.com/",
+        category: "design"
+    },
+    {
+        title: {
+            en: "Lanhu (蓝湖)",
+            zh: "蓝湖（Lanhu）"
+        },
+        description: {
+            en: "An online design collaboration platform supporting real-time collaboration and design annotation, convenient for UI/UX designers and developers.",
+            zh: "在线设计协作平台，支持团队实时协作和设计稿标注，方便 UI/UX 设计师和开发者。"
+        },
+        url: "https://lanhuapp.com/",
+        category: "design"
+    },
+    {
+        title: {
+            en: "ZCOOL (站酷)",
+            zh: "站酷（ZCOOL）"
+        },
+        description: {
+            en: "China's largest designer community providing a rich platform for showcasing and exchanging design works.",
+            zh: "中国最大的设计师社区，提供丰富的设计作品展示和交流平台。"
+        },
+        url: "https://www.zcool.com.cn/",
+        category: "design"
+    },
+
+    // 开源项目与资源平台
+    {
+        title: {
+            en: "SourceForge",
+            zh: "SourceForge"
+        },
+        description: {
+            en: "One of the largest open-source software development platforms globally, collecting thousands of open-source projects and resources.",
+            zh: "全球最大的开源软件开发平台之一，收录数以万计的开源项目和资源。"
+        },
+        url: "https://sourceforge.net/",
+        category: "open-source"
+    },
+    {
+        title: {
+            en: "OSChina (开源中国)",
+            zh: "开源中国（OSChina）"
+        },
+        description: {
+            en: "China's largest open-source technology community providing rich open-source projects, technical articles, and developer exchanges.",
+            zh: "中国最大的开源技术社区，提供丰富的开源项目、技术文章和开发者交流平台。"
+        },
+        url: "https://www.oschina.net/",
+        category: "open-source"
+    },
+    {
+        title: {
+            en: "FreeCodeCamp",
+            zh: "FreeCodeCamp"
+        },
+        description: {
+            en: "A non-profit organization providing free programming learning resources and project practice, covering full-stack development areas.",
+            zh: "一个非营利组织，提供免费的编程学习资源和项目实践，涵盖全栈开发等领域。"
+        },
+        url: "https://www.freecodecamp.org/",
+        category: "education"
+    },
+    {
+        title: {
+            en: "GitHut",
+            zh: "GitHut"
+        },
+        description: {
+            en: "Provides search and ranking services for open-source projects, helping users discover popular open-source projects.",
+            zh: "提供开源项目搜索和排名服务，可帮助用户发现热门开源项目。"
+        },
+        url: "https://githut.info/",
+        category: "open-source"
+    },
+
+    // 算法与数据结构练习平台
+    {
+        title: {
+            en: "LeetCode",
+            zh: "LeetCode"
+        },
+        description: {
+            en: "An online evaluation platform for algorithms and data structures, providing numerous coding problems, commonly used in big company recruitment exams.",
+            zh: "算法和数据结构的在线评测平台，提供大量编程题目，是大厂招聘笔试常考平台。"
+        },
+        url: "https://leetcode.com/",
+        category: "challenge"
+    },
+    {
+        title: {
+            en: "GeeksforGeeks",
+            zh: "GeeksforGeeks"
+        },
+        description: {
+            en: "Provides tutorials and practice problems on algorithms, data structures, and programming languages to enhance computer science fundamentals.",
+            zh: "提供算法、数据结构、编程语言等方面的教程和实践题目，提升计算机科学基础知识。"
+        },
+        url: "https://www.geeksforgeeks.org/",
+        category: "education"
+    },
+    {
+        title: {
+            en: "Codewars",
+            zh: "Codewars"
+        },
+        description: {
+            en: "A community-driven coding challenge platform where users can improve their programming skills by solving challenges.",
+            zh: "社区驱动的编程挑战平台，通过解决挑战提高编程技能。"
+        },
+        url: "https://www.codewars.com/",
+        category: "challenge"
+    },
+    {
+        title: {
+            en: "HackerRank",
+            zh: "HackerRank"
+        },
+        description: {
+            en: "Provides coding challenges and assessments in various domains including algorithms, data structures, and programming.",
+            zh: "提供算法、数据结构、编程等领域的题目，可用于练习和竞赛。"
+        },
+        url: "https://www.hackerrank.com/",
+        category: "challenge"
+    },
+
+    // 技术资讯与媒体平台
+    {
+        title: {
+            en: "InfoQ",
+            zh: "InfoQ"
+        },
+        description: {
+            en: "A practice-driven, community-centered technology media platform providing the latest news in programming and internet industries.",
+            zh: "实践驱动、以社区为中心的技术媒体平台，提供编程和互联网行业最新资讯。"
+        },
+        url: "https://www.infoq.com/",
+        category: "media"
+    },
+    {
+        title: {
+            en: "Hacker News",
+            zh: "Hacker News"
+        },
+        description: {
+            en: "A technology news community created by Y Combinator discussing entrepreneurship, programming, and technology trends.",
+            zh: "由创业孵化器 Y Combinator 创建的科技新闻社区，讨论创业、编程和技术趋势。"
+        },
+        url: "https://news.ycombinator.com/",
+        category: "media"
+    },
+    {
+        title: {
+            en: "Smashing Magazine",
+            zh: "Smashing Magazine"
+        },
+        description: {
+            en: "Provides practical tips and best practices for web design and development.",
+            zh: "提供有关 Web 设计和开发的实用技巧和最佳实践。"
+        },
+        url: "https://www.smashingmagazine.com/",
+        category: "media"
+    },
+    {
+        title: {
+            en: "极客公园",
+            zh: "极客公园"
+        },
+        description: {
+            en: "A technology media providing reports, reviews, and analyses on technology, programming, and tech topics.",
+            zh: "一个科技媒体，提供有关科技、编程和技术的报道、评论和分析。"
+        },
+        url: "https://www.geekpark.net/",
+        category: "media"
+    },
+
+    // 项目管理与团队协作工具
+    {
+        title: {
+            en: "Trello",
+            zh: "Trello"
+        },
+        description: {
+            en: "An online task management tool based on the Kanban method, facilitating team collaboration and task tracking.",
+            zh: "在线任务管理工具，基于看板式的管理方法，便于团队协作和任务跟踪。"
+        },
+        url: "https://trello.com/",
+        category: "productivity"
+    },
+    {
+        title: {
+            en: "Asana",
+            zh: "Asana"
+        },
+        description: {
+            en: "An online project management tool helping teams better organize and collaborate.",
+            zh: "在线项目管理工具，帮助团队更好地组织和协作。"
+        },
+        url: "https://asana.com/",
+        category: "productivity"
+    },
+    {
+        title: {
+            en: "JIRA",
+            zh: "JIRA"
+        },
+        description: {
+            en: "A professional project management tool supporting agile development and team collaboration.",
+            zh: "专业的项目管理工具，支持敏捷开发和团队协作。"
+        },
+        url: "https://www.atlassian.com/software/jira",
+        category: "productivity"
+    },
+    {
+        title: {
+            en: "Confluence",
+            zh: "Confluence"
+        },
+        description: {
+            en: "A team knowledge management tool for document, note, and knowledge sharing.",
+            zh: "团队知识管理工具，可用于文档、笔记和知识分享。"
+        },
+        url: "https://www.atlassian.com/software/confluence",
+        category: "productivity"
+    },
+
+    // 其他
+    {
+    title: {
+        en: "Gitee",
+        zh: "码云（Gitee）"
+    },
+    description: {
+        en: "A leading Chinese code hosting platform providing Git version control, code review, and continuous integration features.",
+        zh: "中国领先的代码托管平台，提供 Git 版本控制、代码审查和持续集成等功能。"
+    },
+    url: "https://gitee.com/",
+    category: "platform"
+},
+{
+    title: {
+        en: "Coding",
+        zh: "Coding"
+    },
+    description: {
+        en: "Provides code hosting, project management, code review, and continuous integration services supporting team collaboration and agile development.",
+        zh: "提供代码托管、项目管理、代码审查和持续集成等服务，支持团队协作和敏捷开发。"
+    },
+    url: "https://coding.net/",
+    category: "platform"
 }
-
-
+    
 
 
 
