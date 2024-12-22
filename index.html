@@ -346,32 +346,33 @@
             }
         };
 
-        // Create and render website cards
-        function renderWebsites(websitesToRender) {
-            websiteGrid.innerHTML = '';
-            
-            if (websitesToRender.length === 0) {
-                websiteGrid.innerHTML = `<div class="no-results">${translations[currentLang].noResults}</div>`;
-                return;
-            }
-
-            websitesToRender.forEach((website, index) => {
-                const card = document.createElement('div');
-                card.className = 'card fade-in';
-                card.style.animationDelay = `${index * 0.1}s`;
-                card.innerHTML = `
-                    <h3>${website.title[currentLang]}</h3>
-                    <p>${website.description[currentLang]}</p>
-                    <span class="category">${website.category}</span>
-                `;
-                
-                card.addEventListener('click', () => {
-                    window.location.href = website.url;
-                });
-
-                websiteGrid.appendChild(card);
-            });
+            // Create and render website cards
+    function renderWebsites(websitesToRender) {
+        websiteGrid.innerHTML = '';
+        
+        if (websitesToRender.length === 0) {
+            websiteGrid.innerHTML = `<div class="no-results">${translations[currentLang].noResults}</div>`;
+            return;
         }
+
+        websitesToRender.forEach((website, index) => {
+            const card = document.createElement('div');
+            card.className = 'card fade-in';
+            card.style.animationDelay = `${index * 0.1}s`;
+            card.innerHTML = `
+                <h3>${website.title[currentLang]}</h3>
+                <p>${website.description[currentLang]}</p>
+                <span class="category">${website.category}</span>
+            `;
+            
+            card.addEventListener('click', () => {
+                window.open(website.url, '_blank'); // 修改这里，添加 '_blank'
+            });
+
+            websiteGrid.appendChild(card);
+        });
+    }
+            
 
         // Search functionality
         function handleSearch() {
