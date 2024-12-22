@@ -1,7 +1,7 @@
 
     const websites = [
    
-    // 已有网站...
+   
     {
         title: {
             en: "LinkedIn",
@@ -885,7 +885,264 @@
         },
         url: "https://aws.amazon.com/",
         category: "cloud"
-    }
+    },
+    {
+    title: {
+        en: "Visual Studio Code",
+        zh: "Visual Studio Code"
+    },
+    description: {
+        en: "A code editor redefined and optimized for building and debugging modern web and cloud applications.",
+        zh: "一个重新定义并优化的代码编辑器，适用于构建和调试现代Web和云应用程序。"
+    },
+    url: "https://code.visualstudio.com/",
+    category: "development"
+},
+{
+    title: {
+        en: "JRE (Java Runtime Environment)",
+        zh: "JRE (Java运行时环境)"
+    },
+    description: {
+        en: "The Java Runtime Environment (JRE) provides the libraries, the Java Virtual Machine, and other components to run applets and applications written in the Java programming language.",
+        zh: "Java运行时环境（JRE）提供了库、Java虚拟机及其他组件，用于运行用Java编程语言编写的Applet和应用程序。"
+    },
+    url: "https://www.oracle.com/java/technologies/javase-jre8-downloads.html",
+    category: "software"
+},
+{
+    title: {
+        en: "PyCharm",
+        zh: "PyCharm"
+    },
+    description: {
+        en: "The Python IDE for Professional Developers.",
+        zh: "面向专业开发者的Python集成开发环境。"
+    },
+    url: "https://www.jetbrains.com/pycharm/",
+    category: "development"
+},
+{
+    title: {
+        en: "Unreal Engine 5",
+        zh: "虚幻引擎5"
+    },
+    description: {
+        en: "The world's most advanced real-time 3D creation tool.",
+        zh: "全球最先进的实时3D创作工具。"
+    },
+    url: "https://www.unrealengine.com/en-US/",
+    category: "gaming"
+},
+{
+    title: {
+        en: "Bilibili",
+        zh: "哔哩哔哩"
+    },
+    description: {
+        en: "A comprehensive video-sharing platform for anime, games, music, and more.",
+        zh: "一个涵盖动漫、游戏、音乐等内容的综合视频分享平台。"
+    },
+    url: "https://www.bilibili.com/",
+    category: "entertainment"
+},
+{
+    title: {
+        en: "VMware",
+        zh: "VMware"
+    },
+    description: {
+        en: "A provider of virtualization and cloud computing solutions.",
+        zh: "提供虚拟化和云计算解决方案的供应商。"
+    },
+    url: "https://www.vmware.com/",
+    category: "software"
+},
+{
+    title: {
+        en: "Unit",
+        zh: "Unit"
+    },
+    description: {
+        en: "A web application server designed to be fast, flexible, and easy to use.",
+        zh: "一个设计为快速、灵活且易于使用的Web应用程序服务器。"
+    },
+    url: "https://unit.nginx.org/",
+    category: "software"
+},
+{
+    title: {
+        en: "CMake",
+        zh: "CMake"
+    },
+    description: {
+        en: "A cross-platform build system generator.",
+        zh: "一个跨平台的构建系统生成器。"
+    },
+    url: "https://cmake.org/",
+    category: "development"
+},
+{
+    title: {
+        en: "Visual Studio",
+        zh: "Visual Studio"
+    },
+    description: {
+        en: "A comprehensive suite of development tools for building any type of application.",
+        zh: "一个用于构建任何类型应用程序的综合开发工具套件。"
+    },
+    url: "https://visualstudio.microsoft.com/",
+    category: "development"
+},
+{
+    title: {
+        en: "Firefox",
+        zh: "Firefox"
+    },
+    description: {
+        en: "A free, open-source web browser known for its speed and privacy.",
+        zh: "一个以速度和隐私著称的免费开源Web浏览器。"
+    },
+    url: "https://www.mozilla.org/en-US/firefox/",
+    category: "software"
+},
+{
+    title: {
+        en: "Dev-Sidecar",
+        zh: "Dev-Sidecar"
+    },
+    description: {
+        en: "A tool for quick access to GitHub",
+        zh: "一个用于快速访问hithub的工具。"
+    },
+    url: "https://github.com/docmirror/dev-sidecar",
+    category: "tools"
+},
+{
+    title: {
+        en: "WeChat",
+        zh: "微信"
+    },
+    description: {
+        en: "A popular messaging and social media app.",
+        zh: "一个流行的即时通讯和社交媒体应用程序。"
+    },
+    url: "https://weixin.qq.com/",
+    category: "communication"
+},
+{
+    title: {
+        en: "QQ",
+        zh: "QQ"
+    },
+    description: {
+        en: "A widely used messaging and social networking app in China.",
+        zh: "中国广泛使用的即时通讯和社交网络应用程序。"
+    },
+    url: "https://im.qq.com/",
+    category: "communication"
+},
+{
+    title: {
+        en: "Microsoft",
+        zh: "微软"
+    },
+    description: {
+        en: "A global technology leader providing software, services, and devices.",
+        zh: "全球领先的科技公司，提供软件、服务和设备。"
+    },
+    url: "https://www.microsoft.com/",
+    category: "technology"
+},
+{
+    title: {
+        en: "Java",
+        zh: "Java"
+    },
+    description: {
+        en: "A high-level, class-based, object-oriented programming language.",
+        zh: "一种高级的、基于类的面向对象编程语言。"
+    },
+    url: "https://www.oracle.com/java/",
+    category: "programming"
+},
+{
+    title: {
+        en: "Krita",
+        zh: "Krita"
+    },
+    description: {
+        en: "A free and open-source digital painting and illustration software.",
+        zh: "一个免费开源的数字绘画和插图软件。"
+    },
+    url: "https://krita.org/",
+    category: "design"
+},
+{
+    title: {
+        en: "NetEase Cloud Music",
+        zh: "网易云音乐"
+    },
+    description: {
+        en: "A popular music streaming and social platform.",
+        zh: "一个流行的音乐流媒体和社会平台。"
+    },
+    url: "https://music.163.com/",
+    category: "entertainment"
+},
+{
+    title: {
+        en: "V0.dev",
+        zh: "V0.dev"
+    },
+    description: {
+        en: "An AI-generated UI framework website.",
+        zh: "一个AI生成ui框架网站。"
+    },
+    url: "https://v0.dev/",
+    category: "tools"
+},
+{
+    title: {
+        en: "V0",
+        zh: "V0"
+    },
+    description: {
+        en: "A decentralized video platform.",
+        zh: "一个去中心化的视频平台。"
+    },
+    url: "https://v0.gg/",
+    category: "entertainment"
+},
+{
+    title: {
+        en: "Open-JAD",
+        zh: "Open-JAD"
+    },
+    description: {
+        en: "open-JAD website",
+        zh: "open-JAD的官方网站"
+    },
+    url: "https://open-jad.github.io/",
+    category: "development"
+},
+{
+    title: {
+        en: "Developer Search",
+        zh: "开发者搜索"
+    },
+    description: {
+        en: "A platform to search for developers and their projects.",
+        zh: "一个用于搜索开发者及其项目的平台。"
+    },
+    url: "https://kaifa.baidu.com/",
+    category: "search"
+}
+
+
+
+
+
 ];
 
 
