@@ -2635,6 +2635,126 @@
     },
     url: "https://regex101.com/",
     category: "tool"
+},
+{
+    title: {
+        en: "SourceForge",
+        zh: "SourceForge"
+    },
+    description: {
+        en: "The world's largest open source software development platform and repository, providing storage, collaboration, and release platforms for open source software, integrating many open source application programs, hosting a massive number of projects.",
+        zh: "全球最大的开源软件开发平台和仓库，为开源软件提供存储、协作和发布的平台，集成了很多开放源代码应用程序，托管了海量项目。"
+    },
+    url: "https://sourceforge.net/",
+    category: "platform"
+},
+{
+    title: {
+        en: "慕课网",
+        zh: "慕课网"
+    },
+    description: {
+        en: "A well-known programming skill learning platform in China, covering 60 mainstream technical languages such as JAVA, front-end, Python, big data, etc., with a wide variety of courses available for free and paid.",
+        zh: "国内知名的编程技能学习平台，涉及JAVA、前端、Python、大数据等60类主流技术语言，课程丰富多样，有免费和付费课程可供选择。"
+    },
+    url: "https://www.imooc.com/",
+    category: "education"
+},
+{
+    title: {
+        en: "CodinGame",
+        zh: "CodinGame"
+    },
+    description: {
+        en: "An innovative programming learning platform that combines programming with games, supporting multiple programming languages, enhancing programming skills through game-based programming challenges with real-time visual feedback.",
+        zh: "创新型编程学习平台，将编程与游戏结合，支持多种编程语言，通过编程游戏对抗的方式提升编程技能，获得实时视觉反馈。"
+    },
+    url: "https://www.codingame.com/",
+    category: "challenge"
+},
+{
+    title: {
+        en: "TopCoder",
+        zh: "TopCoder"
+    },
+    description: {
+        en: "One of the earliest online programming competition platforms, providing a series of algorithm challenges, hosting competitions, offering rewards to winners, and also providing part-time software development opportunities for enterprises.",
+        zh: "最早的在线编程竞技平台之一，提供一系列算法挑战，举办竞赛，获胜者可获得奖励，还能为企业提供软件开发兼职机会。"
+    },
+    url: "https://www.topcoder.com/",
+    category: "challenge"
+},
+{
+    title: {
+        en: "JSON在线解析与格式化工具",
+        zh: "JSON在线解析与格式化工具"
+    },
+    description: {
+        en: "A tool for formatting JSON data to make it easier to read and edit, convenient for processing JSON data.",
+        zh: "一个在线JSON解析与格式化工具，可将JSON数据进行格式化，使其更易于阅读和编辑，方便处理JSON数据。"
+    },
+    url: "https://www.json.cn/",
+    category: "tool"
+},
+{
+    title: {
+        en: "正则表达式测试工具",
+        zh: "正则表达式测试工具"
+    },
+    description: {
+        en: "An online tool for testing regular expressions, convenient for writing and debugging regular expressions.",
+        zh: "在线正则表达式测试工具，方便编写和调试正则表达式。"
+    },
+    url: "https://regex101.com/",
+    category: "tool"
+},
+{
+    title: {
+        en: "Golang中文社区",
+        zh: "Golang中文社区"
+    },
+    description: {
+        en: "A learning home for Go language enthusiasts, sharing Go language knowledge and exchanging usage experiences.",
+        zh: "Go语言爱好者的学习家园，分享Go语言知识、交流使用经验等。"
+    },
+    url: "https://studygolang.com/",
+    category: "community"
+},
+{
+    title: {
+        en: "看雪学院",
+        zh: "看雪学院"
+    },
+    description: {
+        en: "Focused on software security and reverse engineering fields, providing related technical articles, tutorials, and forum exchanges, which are very helpful for programmers interested in the security field.",
+        zh: "专注于软件安全和逆向工程领域，提供相关技术文章、教程和论坛交流，对于对安全领域感兴趣的程序员有很大帮助。"
+    },
+    url: "https://bbs.pediy.com/",
+    category: "education"
+},
+{
+    title: {
+        en: "中国电子网",
+        zh: "中国电子网"
+    },
+    description: {
+        en: "Provides information and technical articles on electronic technology, embedded systems, single-chip microcomputers, etc., serving as an exchange platform for hardware developers and embedded programmers.",
+        zh: "提供电子技术、嵌入式系统、单片机等方面的资讯和技术文章，是硬件开发和嵌入式程序员的交流平台之一。"
+    },
+    url: "https://www.ce.cn/",
+    category: "resource"
+},
+{
+    title: {
+        en: "驱动开发网",
+        zh: "驱动开发网"
+    },
+    description: {
+        en: "Focused on driver development fields, providing driver development technical materials, tutorials, and forum exchanges, making it convenient for driver developers to obtain resources and solve problems.",
+        zh: "专注于驱动开发领域，提供驱动开发技术资料、教程和论坛交流，方便驱动开发人员获取资源和解决问题。"
+    },
+    url: "https://www.wuyou.net/",
+    category: "resource"
 }
     
 
